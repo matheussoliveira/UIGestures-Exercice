@@ -12,19 +12,18 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    var soundFlag = 0
+    var soundFlag = 0   // Let us know if sound is enable or not
     var musicPlayer = AVAudioPlayer()
     var player: AVAudioPlayer?
+    var stop: Bool = false  // Helps us with sun rotation contitions
 
     @IBOutlet weak var speaker: UIImageView!
-    
     @IBOutlet weak var sun: UIImageView!
-    
     @IBOutlet weak var birds: UIImageView!
-    @IBOutlet weak var cloud: Cloud!
+    @IBOutlet weak var cloud: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "nathalia-barbosa-paisagem-comass.png") ?? nil)!)
         
         // Defining background image programmatically
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -66,10 +65,10 @@ class ViewController: UIViewController {
     
     // Plays birds sound on double tap
     @objc func doubleTapHandler(_ tap: UITapGestureRecognizer) {
-        // Play birds sound
         BirdsEffects.shared.startBackgroundMusic()
     }
     
+    // Clouds pan gesture
     @IBAction func panHandler(recognizer:UIPanGestureRecognizer) {
         let translation = recognizer.translation(in: self.view)
         if let view = recognizer.view {view.center = CGPoint(x:view.center.x +
@@ -79,6 +78,7 @@ class ViewController: UIViewController {
         recognizer.setTranslation(CGPoint.zero, in: self.view)
     }
     
+    // Clouds pinch gesture
     @IBAction func pinchHandler(recognizer : UIPinchGestureRecognizer) {
         
         if let view = recognizer.view {
@@ -88,6 +88,7 @@ class ViewController: UIViewController {
     
     }
     
+    // Clouds pinch gesture
     @IBAction func rotateHandler(recognizer : UIRotationGestureRecognizer) {
         if let view = recognizer.view {
             view.transform = view.transform.rotated(by: recognizer.rotation)
@@ -95,33 +96,8 @@ class ViewController: UIViewController {
         }
     }
     
-    func playSound() {
-        guard let url = Bundle.main.url(forResource: "birds-sound", withExtension: "mp3") else { return }
-        
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            /* iOS 10 and earlier require the following line:
-             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
-            
-            guard let player = player else { return }
-            
-            player.play()
-            
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }
-
-    
-    var stop: Bool = false
-    
+    // Rotates our sun
     func rotate() {
-        
         _ = Timer.scheduledTimer(withTimeInterval: 0.04, repeats: true
             , block: { (timer) in
                 
@@ -131,10 +107,10 @@ class ViewController: UIViewController {
                     
                     self.sun.transform = self.sun.transform.rotated(by: .pi / 180)
                 }
-                
         })
     }
     
+    // Sun long press gesture
     @objc func longPress(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             // start rotation
@@ -148,6 +124,8 @@ class ViewController: UIViewController {
     }
 }
 
+// Extends our ViewController to let us
+// move clouds while using pinch gesture
 extension ViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true

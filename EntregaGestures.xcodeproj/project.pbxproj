@@ -11,7 +11,6 @@
 		2F2830F0229D5A7C00BE3E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2830EF229D5A7C00BE3E42 /* ViewController.swift */; };
 		2F2830F3229D5A7C00BE3E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2830F1229D5A7C00BE3E42 /* Main.storyboard */; };
 		2F2830F8229D5A7E00BE3E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2830F6229D5A7E00BE3E42 /* LaunchScreen.storyboard */; };
-		2F921650229EAB4B001AE41C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92164F229EAB4B001AE41C /* Cloud.swift */; };
 		2FC37970229F30CA00505104 /* BackgroundMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3796F229F30CA00505104 /* BackgroundMusic.swift */; };
 		2FC37974229F33B900505104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC37973229F33B900505104 /* Assets.xcassets */; };
 		2FF0ACE2229FF4BA0045AFAB /* bensound-slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF0ACE1229FF4BA0045AFAB /* bensound-slowmotion.mp3 */; };
@@ -26,7 +25,6 @@
 		2F2830F2229D5A7C00BE3E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F2830F7229D5A7E00BE3E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F2830F9229D5A7E00BE3E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F92164F229EAB4B001AE41C /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		2FC3796F229F30CA00505104 /* BackgroundMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusic.swift; sourceTree = "<group>"; };
 		2FC37973229F33B900505104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF0ACE1229FF4BA0045AFAB /* bensound-slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-slowmotion.mp3"; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				2F2830F6229D5A7E00BE3E42 /* LaunchScreen.storyboard */,
 				2FC37973229F33B900505104 /* Assets.xcassets */,
 				2F2830F9229D5A7E00BE3E42 /* Info.plist */,
-				2F92164F229EAB4B001AE41C /* Cloud.swift */,
 			);
 			path = EntregaGestures;
 			sourceTree = "<group>";
@@ -163,7 +160,6 @@
 				2F2830F0229D5A7C00BE3E42 /* ViewController.swift in Sources */,
 				2FC37970229F30CA00505104 /* BackgroundMusic.swift in Sources */,
 				2FF0ACE4229FFBCE0045AFAB /* BirdsEffect.swift in Sources */,
-				2F921650229EAB4B001AE41C /* Cloud.swift in Sources */,
 				2F2830EE229D5A7C00BE3E42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
