@@ -25,7 +25,15 @@
                                     <constraint firstAttribute="height" constant="450" id="tw2-Pk-Lyo"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uQv-w5-j1k" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birds" translatesAutoresizingMaskIntoConstraints="NO" id="bW4-FR-IUt">
+                                <rect key="frame" x="27" y="513" width="387" height="206"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="387" id="0wz-cL-R1Q"/>
+                                    <constraint firstAttribute="height" constant="206" id="qJ2-Ng-8S1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uQv-w5-j1k">
                                 <rect key="frame" x="154" y="54" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -38,7 +46,7 @@
                                     <outletCollection property="gestureRecognizers" destination="dee-O2-cG1" appends="YES" id="rt7-WQ-JlQ"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="jWt-3z-cJ1" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="jWt-3z-cJ1">
                                 <rect key="frame" x="166" y="170" width="240" height="128"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -50,7 +58,7 @@
                                     <outletCollection property="gestureRecognizers" destination="PkZ-cD-phI" appends="YES" id="y9l-Xx-emn"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ZHl-YI-Tof" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ZHl-YI-Tof">
                                 <rect key="frame" x="-20" y="124" width="260" height="128"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -61,14 +69,6 @@
                                     <outletCollection property="gestureRecognizers" destination="vDG-rE-hr6" appends="YES" id="hqC-vh-9Xj"/>
                                     <outletCollection property="gestureRecognizers" destination="EaL-1E-J0B" appends="YES" id="O2E-Np-qqA"/>
                                 </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birds" translatesAutoresizingMaskIntoConstraints="NO" id="bW4-FR-IUt">
-                                <rect key="frame" x="27" y="513" width="387" height="206"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="387" id="0wz-cL-R1Q"/>
-                                    <constraint firstAttribute="height" constant="206" id="qJ2-Ng-8S1"/>
-                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40L-rj-MFb">
                                 <rect key="frame" x="344" y="44" width="50" height="50"/>
@@ -115,11 +115,13 @@
                 <pinchGestureRecognizer id="J7Q-N6-Qdd">
                     <connections>
                         <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="Zxp-oD-tbL"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Ri0-xc-N32"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="dee-O2-cG1">
                     <connections>
                         <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="8Y2-Pq-D7u"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="TV8-x0-Myw"/>
                     </connections>
                 </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="PkZ-cD-phI">
@@ -130,11 +132,13 @@
                 <pinchGestureRecognizer id="rDa-4c-FTw">
                     <connections>
                         <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="OuV-19-HrU"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="nAl-In-5vz"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="Mv7-CE-TTH">
                     <connections>
                         <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="Fg7-Qs-k3U"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="iUj-rt-d8f"/>
                     </connections>
                 </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Xr3-YO-CZ6">
@@ -145,11 +149,13 @@
                 <pinchGestureRecognizer id="EaL-1E-J0B">
                     <connections>
                         <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="SdG-VY-cft"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="LgX-IG-jPP"/>
                     </connections>
                 </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="vDG-rE-hr6">
                     <connections>
                         <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="ZE8-Gh-gWK"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="uhF-Xx-2Aj"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>

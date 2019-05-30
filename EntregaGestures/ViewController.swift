@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         
         // Background music
-        MusicPlayer.shared.startBackgroundMusic()
+        BackgroundMusic.shared.startBackgroundMusic()
         
         // Long press button
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(_:)))
@@ -55,17 +55,17 @@ class ViewController: UIViewController {
         if soundFlag == 0 {
             speaker.image = UIImage(named: "no-sound.png")!
             soundFlag = 1
-            MusicPlayer.shared.stopMusicBackground()
+            BackgroundMusic.shared.stopMusicBackground()
         } else {
             speaker.image = UIImage(named: "sound.png")!
             soundFlag = 0
-            MusicPlayer.shared.startBackgroundMusic()
+            BackgroundMusic.shared.startBackgroundMusic()
         }
     }
     
     // Plays birds sound on double tap
     @objc func doubleTapHandler(_ tap: UITapGestureRecognizer) {
-        BirdsEffects.shared.startBackgroundMusic()
+        BirdsEffects.shared.startBirdsSound()
     }
     
     // Clouds pan gesture
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     
     }
     
-    // Clouds pinch gesture
+    // Clouds rotate gesture
     @IBAction func rotateHandler(recognizer : UIRotationGestureRecognizer) {
         if let view = recognizer.view {
             view.transform = view.transform.rotated(by: recognizer.rotation)
@@ -96,17 +96,15 @@ class ViewController: UIViewController {
         }
     }
     
-    // Rotates our sun
+    // Sun rotation animation
     func rotate() {
-        _ = Timer.scheduledTimer(withTimeInterval: 0.04, repeats: true
-            , block: { (timer) in
-                
-                if self.stop {
-                    timer.invalidate()
-                } else {
-                    
-                    self.sun.transform = self.sun.transform.rotated(by: .pi / 180)
-                }
+        _ = Timer.scheduledTimer(withTimeInterval: 0.04, repeats: true,
+                                 block: { (timer) in
+            if self.stop {
+                timer.invalidate()
+            } else {
+                self.sun.transform = self.sun.transform.rotated(by: .pi / 180)
+            }
         })
     }
     

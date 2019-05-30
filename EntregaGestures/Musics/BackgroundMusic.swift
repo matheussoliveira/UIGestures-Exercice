@@ -9,8 +9,8 @@
 import Foundation
 import AVFoundation
 
-class MusicPlayer {
-    static let shared = MusicPlayer()
+class BackgroundMusic {
+    static let shared = BackgroundMusic()
     var audioPlayer: AVAudioPlayer?
     
     func startBackgroundMusic() {
@@ -34,8 +34,6 @@ class MusicPlayer {
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf:backgroundMusic as URL)
                 guard let audioPlayer = audioPlayer else { return }
-                audioPlayer.numberOfLoops = -1  // Infinity loop
-                audioPlayer.prepareToPlay()
                 audioPlayer.stop()
             } catch {
                 print(error)

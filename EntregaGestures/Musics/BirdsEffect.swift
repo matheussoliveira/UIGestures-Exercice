@@ -13,30 +13,14 @@ class BirdsEffects {
     static let shared = BirdsEffects()
     var audioPlayer: AVAudioPlayer?
     
-    func startBackgroundMusic() {
+    func startBirdsSound() {
         if let bundle = Bundle.main.path(forResource: "birds-sound", ofType: "aiff") {
-            let backgroundMusic = NSURL(fileURLWithPath: bundle)
+            let birdsSound = NSURL(fileURLWithPath: bundle)
             do {
-                audioPlayer = try AVAudioPlayer(contentsOf:backgroundMusic as URL)
+                audioPlayer = try AVAudioPlayer(contentsOf:birdsSound as URL)
                 guard let audioPlayer = audioPlayer else { return }
-                audioPlayer.numberOfLoops = 0  // Infinity loop
                 audioPlayer.prepareToPlay()
                 audioPlayer.play()
-            } catch {
-                print(error)
-            }
-        }
-    }
-    
-    func stopMusicBackground() {
-        if let bundle = Bundle.main.path(forResource: "birds-sound", ofType: "aiff") {
-            let backgroundMusic = NSURL(fileURLWithPath: bundle)
-            do {
-                audioPlayer = try AVAudioPlayer(contentsOf:backgroundMusic as URL)
-                guard let audioPlayer = audioPlayer else { return }
-                audioPlayer.numberOfLoops = 0  // Infinity loop
-                audioPlayer.prepareToPlay()
-                audioPlayer.stop()
             } catch {
                 print(error)
             }
