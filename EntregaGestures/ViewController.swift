@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var sun: UIImageView!
     @IBOutlet weak var birds: UIImageView!
     @IBOutlet weak var cloud: UIImageView!
+    @IBOutlet weak var cloud2: UIImageView!
+    @IBOutlet weak var cloud3: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //backgroundBirds.center.x -= view.bounds.width
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +54,15 @@ class ViewController: UIViewController {
         speaker.image = UIImage(named: "sound.png")!
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapHandler(_:)))
         speaker.addGestureRecognizer(tap)
+        
+        sun.center.x -= view.bounds.width
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        UIImageView.animate(withDuration: 0.5) {
+//            self.sun.center.x += 214.0
+        cloudAnimation()
+//        }
     }
     
     // Background music stops on speaker tap
@@ -105,6 +120,17 @@ class ViewController: UIViewController {
             } else {
                 self.sun.transform = self.sun.transform.rotated(by: .pi / 180)
             }
+        })
+    }
+    
+    func cloudAnimation() {
+        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true,
+                                 block: { (timer) in
+                                            UIImageView.animate(withDuration: 0.5) {
+                                                self.cloud.center.x += 4
+                                                self.cloud2.center.x += 4
+                                                self.cloud3.center.x += 4
+                                            }
         })
     }
     

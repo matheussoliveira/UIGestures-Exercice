@@ -101,6 +101,8 @@
                     <connections>
                         <outlet property="birds" destination="bW4-FR-IUt" id="8ay-vo-GXw"/>
                         <outlet property="cloud" destination="uQv-w5-j1k" id="DI2-0N-M5J"/>
+                        <outlet property="cloud2" destination="ZHl-YI-Tof" id="vkk-q3-Dng"/>
+                        <outlet property="cloud3" destination="jWt-3z-cJ1" id="7ZA-Rl-ZpC"/>
                         <outlet property="speaker" destination="40L-rj-MFb" id="T44-6v-BJS"/>
                         <outlet property="sun" destination="2IK-27-aGh" id="jvs-Q4-oGB"/>
                     </connections>
