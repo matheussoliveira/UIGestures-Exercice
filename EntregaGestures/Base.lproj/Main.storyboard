@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EntregaGestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine-vector" translatesAutoresizingMaskIntoConstraints="NO" id="2IK-27-aGh">
+                                <rect key="frame" x="-450" y="-200" width="843" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="843" id="ssz-wk-ozk"/>
+                                    <constraint firstAttribute="height" constant="450" id="tw2-Pk-Lyo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uQv-w5-j1k" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                                <rect key="frame" x="154" y="54" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="BSz-ID-Gew"/>
+                                    <constraint firstAttribute="width" constant="240" id="F6H-Ej-7qs"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KPf-qI-NsS" appends="YES" id="iyq-EP-fkz"/>
+                                    <outletCollection property="gestureRecognizers" destination="J7Q-N6-Qdd" appends="YES" id="JL5-2w-kju"/>
+                                    <outletCollection property="gestureRecognizers" destination="dee-O2-cG1" appends="YES" id="rt7-WQ-JlQ"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="jWt-3z-cJ1" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                                <rect key="frame" x="166" y="170" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uMC-Tg-Kol"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mv7-CE-TTH" appends="YES" id="8eO-Iy-pgg"/>
+                                    <outletCollection property="gestureRecognizers" destination="rDa-4c-FTw" appends="YES" id="QIp-5E-egb"/>
+                                    <outletCollection property="gestureRecognizers" destination="PkZ-cD-phI" appends="YES" id="y9l-Xx-emn"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="ZHl-YI-Tof" customClass="Cloud" customModule="EntregaGestures" customModuleProvider="target">
+                                <rect key="frame" x="-20" y="124" width="260" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZH7-8C-PLQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xr3-YO-CZ6" appends="YES" id="dIP-jw-ZJR"/>
+                                    <outletCollection property="gestureRecognizers" destination="vDG-rE-hr6" appends="YES" id="hqC-vh-9Xj"/>
+                                    <outletCollection property="gestureRecognizers" destination="EaL-1E-J0B" appends="YES" id="O2E-Np-qqA"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birds" translatesAutoresizingMaskIntoConstraints="NO" id="bW4-FR-IUt">
+                                <rect key="frame" x="27" y="513" width="387" height="206"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="387" id="0wz-cL-R1Q"/>
+                                    <constraint firstAttribute="height" constant="206" id="qJ2-Ng-8S1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40L-rj-MFb">
+                                <rect key="frame" x="344" y="44" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JRG-iD-cKr"/>
+                                    <constraint firstAttribute="width" constant="50" id="Ssr-2a-cln"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bW4-FR-IUt" firstAttribute="top" secondItem="jWt-3z-cJ1" secondAttribute="bottom" constant="215" id="0pQ-Gb-oet"/>
+                            <constraint firstItem="2IK-27-aGh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-200" id="2NP-Fp-btE"/>
+                            <constraint firstItem="bW4-FR-IUt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3e4-oA-FXq"/>
+                            <constraint firstItem="bW4-FR-IUt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="6r1-ms-7ia"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jWt-3z-cJ1" secondAttribute="trailing" constant="8" id="LSS-im-RIN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40L-rj-MFb" secondAttribute="trailing" constant="20" id="Szn-Ir-VjQ"/>
+                            <constraint firstItem="uQv-w5-j1k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="WY4-jy-Q4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uQv-w5-j1k" secondAttribute="trailing" constant="20" id="bIi-rf-Ql6"/>
+                            <constraint firstItem="2IK-27-aGh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-450" id="cZK-EY-Qcd"/>
+                            <constraint firstItem="40L-rj-MFb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ci6-N0-Y8z"/>
+                            <constraint firstItem="jWt-3z-cJ1" firstAttribute="top" secondItem="2IK-27-aGh" secondAttribute="bottom" constant="-80" id="fCZ-Wf-gPb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZHl-YI-Tof" secondAttribute="trailing" constant="174" id="fOO-NT-BNV"/>
+                            <constraint firstItem="ZHl-YI-Tof" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="kSb-dl-lAt"/>
+                            <constraint firstItem="jWt-3z-cJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="xfu-Xv-90g"/>
+                            <constraint firstItem="ZHl-YI-Tof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-20" id="zW5-gR-Vxl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="birds" destination="bW4-FR-IUt" id="8ay-vo-GXw"/>
+                        <outlet property="cloud" destination="uQv-w5-j1k" id="DI2-0N-M5J"/>
+                        <outlet property="speaker" destination="40L-rj-MFb" id="T44-6v-BJS"/>
+                        <outlet property="sun" destination="2IK-27-aGh" id="jvs-Q4-oGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="KPf-qI-NsS">
+                    <connections>
+                        <action selector="panHandlerWithRecognizer:" destination="BYZ-38-t0r" id="xZA-kK-qdz"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="3B0-9u-o8Z"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="J7Q-N6-Qdd">
+                    <connections>
+                        <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="Zxp-oD-tbL"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="dee-O2-cG1">
+                    <connections>
+                        <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="8Y2-Pq-D7u"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="PkZ-cD-phI">
+                    <connections>
+                        <action selector="panHandlerWithRecognizer:" destination="BYZ-38-t0r" id="9EX-ex-q30"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="rDa-4c-FTw">
+                    <connections>
+                        <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="OuV-19-HrU"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Mv7-CE-TTH">
+                    <connections>
+                        <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="Fg7-Qs-k3U"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Xr3-YO-CZ6">
+                    <connections>
+                        <action selector="panHandlerWithRecognizer:" destination="BYZ-38-t0r" id="tsU-vl-MF8"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="EaL-1E-J0B">
+                    <connections>
+                        <action selector="pinchHandlerWithRecognizer:" destination="BYZ-38-t0r" id="SdG-VY-cft"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="vDG-rE-hr6">
+                    <connections>
+                        <action selector="rotateHandlerWithRecognizer:" destination="BYZ-38-t0r" id="ZE8-Gh-gWK"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="birds" width="1167" height="876"/>
+        <image name="cloud" width="900" height="450"/>
+        <image name="sunshine-vector" width="1600" height="1600"/>
+    </resources>
+</document>

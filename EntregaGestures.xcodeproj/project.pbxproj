@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2830EE229D5A7C00BE3E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2830ED229D5A7C00BE3E42 /* AppDelegate.swift */; };
+		2F2830F0229D5A7C00BE3E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2830EF229D5A7C00BE3E42 /* ViewController.swift */; };
+		2F2830F3229D5A7C00BE3E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2830F1229D5A7C00BE3E42 /* Main.storyboard */; };
+		2F2830F8229D5A7E00BE3E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F2830F6229D5A7E00BE3E42 /* LaunchScreen.storyboard */; };
+		2F921650229EAB4B001AE41C /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92164F229EAB4B001AE41C /* Cloud.swift */; };
+		2FC37970229F30CA00505104 /* BackgroundMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3796F229F30CA00505104 /* BackgroundMusic.swift */; };
+		2FC37974229F33B900505104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC37973229F33B900505104 /* Assets.xcassets */; };
+		2FF0ACE2229FF4BA0045AFAB /* bensound-slowmotion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF0ACE1229FF4BA0045AFAB /* bensound-slowmotion.mp3 */; };
+		2FF0ACE4229FFBCE0045AFAB /* BirdsEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0ACE3229FFBCE0045AFAB /* BirdsEffect.swift */; };
+		2FF0ACE622A000AE0045AFAB /* birds-sound.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 2FF0ACE522A000AE0045AFAB /* birds-sound.aiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F2830EA229D5A7C00BE3E42 /* EntregaGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntregaGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2830ED229D5A7C00BE3E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F2830EF229D5A7C00BE3E42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F2830F2229D5A7C00BE3E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F2830F7229D5A7E00BE3E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F2830F9229D5A7E00BE3E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F92164F229EAB4B001AE41C /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		2FC3796F229F30CA00505104 /* BackgroundMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMusic.swift; sourceTree = "<group>"; };
+		2FC37973229F33B900505104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FF0ACE1229FF4BA0045AFAB /* bensound-slowmotion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-slowmotion.mp3"; sourceTree = "<group>"; };
+		2FF0ACE3229FFBCE0045AFAB /* BirdsEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsEffect.swift; sourceTree = "<group>"; };
+		2FF0ACE522A000AE0045AFAB /* birds-sound.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "birds-sound.aiff"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F2830E7229D5A7C00BE3E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F2830E1229D5A7C00BE3E42 = {
+			isa = PBXGroup;
+			children = (
+				2F2830EC229D5A7C00BE3E42 /* EntregaGestures */,
+				2F2830EB229D5A7C00BE3E42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F2830EB229D5A7C00BE3E42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F2830EA229D5A7C00BE3E42 /* EntregaGestures.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F2830EC229D5A7C00BE3E42 /* EntregaGestures */ = {
+			isa = PBXGroup;
+			children = (
+				2FF0ACDE229FF3E30045AFAB /* Musics */,
+				2F2830EF229D5A7C00BE3E42 /* ViewController.swift */,
+				2F2830ED229D5A7C00BE3E42 /* AppDelegate.swift */,
+				2F2830F1229D5A7C00BE3E42 /* Main.storyboard */,
+				2F2830F6229D5A7E00BE3E42 /* LaunchScreen.storyboard */,
+				2FC37973229F33B900505104 /* Assets.xcassets */,
+				2F2830F9229D5A7E00BE3E42 /* Info.plist */,
+				2F92164F229EAB4B001AE41C /* Cloud.swift */,
+			);
+			path = EntregaGestures;
+			sourceTree = "<group>";
+		};
+		2FF0ACDE229FF3E30045AFAB /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3796F229F30CA00505104 /* BackgroundMusic.swift */,
+				2FF0ACE3229FFBCE0045AFAB /* BirdsEffect.swift */,
+				2FF0ACE522A000AE0045AFAB /* birds-sound.aiff */,
+				2FF0ACE1229FF4BA0045AFAB /* bensound-slowmotion.mp3 */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F2830E9229D5A7C00BE3E42 /* EntregaGestures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2830FC229D5A7E00BE3E42 /* Build configuration list for PBXNativeTarget "EntregaGestures" */;
+			buildPhases = (
+				2F2830E6229D5A7C00BE3E42 /* Sources */,
+				2F2830E7229D5A7C00BE3E42 /* Frameworks */,
+				2F2830E8229D5A7C00BE3E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EntregaGestures;
+			productName = EntregaGestures;
+			productReference = 2F2830EA229D5A7C00BE3E42 /* EntregaGestures.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F2830E2229D5A7C00BE3E42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Matheus Oliveira";
+				TargetAttributes = {
+					2F2830E9229D5A7C00BE3E42 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F2830E5229D5A7C00BE3E42 /* Build configuration list for PBXProject "EntregaGestures" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F2830E1229D5A7C00BE3E42;
+			productRefGroup = 2F2830EB229D5A7C00BE3E42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F2830E9229D5A7C00BE3E42 /* EntregaGestures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F2830E8229D5A7C00BE3E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2830F8229D5A7E00BE3E42 /* LaunchScreen.storyboard in Resources */,
+				2FC37974229F33B900505104 /* Assets.xcassets in Resources */,
+				2F2830F3229D5A7C00BE3E42 /* Main.storyboard in Resources */,
+				2FF0ACE2229FF4BA0045AFAB /* bensound-slowmotion.mp3 in Resources */,
+				2FF0ACE622A000AE0045AFAB /* birds-sound.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F2830E6229D5A7C00BE3E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2830F0229D5A7C00BE3E42 /* ViewController.swift in Sources */,
+				2FC37970229F30CA00505104 /* BackgroundMusic.swift in Sources */,
+				2FF0ACE4229FFBCE0045AFAB /* BirdsEffect.swift in Sources */,
+				2F921650229EAB4B001AE41C /* Cloud.swift in Sources */,
+				2F2830EE229D5A7C00BE3E42 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F2830F1229D5A7C00BE3E42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2830F2229D5A7C00BE3E42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F2830F6229D5A7E00BE3E42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2830F7229D5A7E00BE3E42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F2830FA229D5A7E00BE3E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F2830FB229D5A7E00BE3E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F2830FD229D5A7E00BE3E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ4Y7Q4FJ2;
+				INFOPLIST_FILE = EntregaGestures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oliveiramatheus.EntregaGestures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F2830FE229D5A7E00BE3E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ4Y7Q4FJ2;
+				INFOPLIST_FILE = EntregaGestures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oliveiramatheus.EntregaGestures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F2830E5229D5A7C00BE3E42 /* Build configuration list for PBXProject "EntregaGestures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2830FA229D5A7E00BE3E42 /* Debug */,
+				2F2830FB229D5A7E00BE3E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2830FC229D5A7E00BE3E42 /* Build configuration list for PBXNativeTarget "EntregaGestures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2830FD229D5A7E00BE3E42 /* Debug */,
+				2F2830FE229D5A7E00BE3E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F2830E2229D5A7C00BE3E42 /* Project object */;
+}
