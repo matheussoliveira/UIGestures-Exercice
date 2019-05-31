@@ -33,6 +33,10 @@
                                     <constraint firstAttribute="height" constant="206" id="qJ2-Ng-8S1"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="Odb-XF-Cni">
+                                <rect key="frame" x="87" y="322" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="uQv-w5-j1k">
                                 <rect key="frame" x="154" y="54" width="240" height="128"/>
                                 <gestureRecognizers/>
@@ -99,6 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="airplane" destination="Odb-XF-Cni" id="k89-fk-6Im"/>
                         <outlet property="birds" destination="bW4-FR-IUt" id="8ay-vo-GXw"/>
                         <outlet property="cloud" destination="uQv-w5-j1k" id="DI2-0N-M5J"/>
                         <outlet property="cloud2" destination="ZHl-YI-Tof" id="vkk-q3-Dng"/>
@@ -167,6 +172,7 @@
     <resources>
         <image name="birds" width="1167" height="876"/>
         <image name="cloud" width="900" height="450"/>
+        <image name="plane" width="512" height="512"/>
         <image name="sunshine-vector" width="1600" height="1600"/>
     </resources>
 </document>

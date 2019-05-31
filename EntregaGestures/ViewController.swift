@@ -23,9 +23,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var cloud: UIImageView!
     @IBOutlet weak var cloud2: UIImageView!
     @IBOutlet weak var cloud3: UIImageView!
+    @IBOutlet weak var airplane: UIImageView!
     
     override func viewWillAppear(_ animated: Bool) {
-        //backgroundBirds.center.x -= view.bounds.width
+        // Sets airplane off the screen
+        airplane.center.x = -60
     }
     
     override func viewDidLoad() {
@@ -36,6 +38,7 @@ class ViewController: UIViewController {
         backgroundImage.image = UIImage(named: "nathalia-barbosa-paisagem-comass.png")
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+        backgroundImage.isUserInteractionEnabled = true
         
         // Background music
         BackgroundMusic.shared.startBackgroundMusic()
@@ -55,14 +58,14 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapHandler(_:)))
         speaker.addGestureRecognizer(tap)
         
-        sun.center.x -= view.bounds.width
+        // Swipe
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(_:)))
+        rightSwipe.direction = .right
+        backgroundImage.addGestureRecognizer(rightSwipe)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        UIImageView.animate(withDuration: 0.5) {
-//            self.sun.center.x += 214.0
         cloudAnimation()
-//        }
     }
     
     // Background music stops on speaker tap
@@ -123,28 +126,39 @@ class ViewController: UIViewController {
         })
     }
     
-    func cloudAnimation() {
-        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true,
-                                 block: { (timer) in
-                                            UIImageView.animate(withDuration: 0.5) {
-                                                self.cloud.center.x += 4
-                                                self.cloud2.center.x += 4
-                                                self.cloud3.center.x += 4
-                                            }
-        })
-    }
-    
     // Sun long press gesture
     @objc func longPress(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            // start rotation
+            // Start rotation
             self.stop = false
             rotate()
         }
         if sender.state == .ended {
-            // stop rotation
+            // Stop rotation
             self.stop = true
         }
+    }
+    
+    // Swipe right gesture and airplane animation
+    @objc func swipeHandler(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .right {
+            UIImageView.animate(withDuration: 5) {
+                self.airplane.center.x += 700
+                self.airplane.center.y -= 400
+            }
+        }
+    }
+    
+    // Cloud animation
+    func cloudAnimation() {
+        _ = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true,
+                                 block: { (timer) in
+                                    UIImageView.animate(withDuration: 0.07) {
+                                        self.cloud.center.x += 2
+                                        self.cloud2.center.x += 2
+                                        self.cloud3.center.x += 2
+                                    }
+        })
     }
 }
 
